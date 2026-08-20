@@ -1,0 +1,26 @@
+{
+  "name": "xirus-maps-extractor",
+  "version": "1.0.0",
+  "description": "High-performance Chromium extension for uncompressed Google Maps media extraction.",
+  "main": "background.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "echo \"Running test suite...\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MdNazmulHV/XIRUS-Maps-Extractor.git"
+  },
+  "keywords": [
+    "chrome-extension",
+    "google-maps",
+    "media-extractor",
+    "manifest-v3"
+  ],
+  "author": "MdNazmulHV",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MdNazmulHV/XIRUS-Maps-Extractor/issues"
+  },
+  "homepage": "https://github.com/MdNazmulHV/XIRUS-Maps-Extractor#readme"
+}
