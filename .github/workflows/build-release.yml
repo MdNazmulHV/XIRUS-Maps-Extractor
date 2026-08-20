@@ -1,0 +1,21 @@
+name: Package Extension
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create Zip Bundle
+        run: |
+          zip -r XIRUS-Maps-Extractor.zip manifest.json background.js icon.png README.md LICENSE
+      - name: Upload to Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: XIRUS-Maps-Extractor.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
