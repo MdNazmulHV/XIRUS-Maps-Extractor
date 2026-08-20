@@ -44,4 +44,4 @@
 
 1. Clone or download the repository:
    ```bash
-   git clone [https://github.com/MdNazmulHV/XIRUS-Maps-Extractor.git](https://github.com/MdNazmulHV/XIRUS-Maps-Extractor.git)
+   git clone https://github.com/MdNazmulHV/XIRUS-Maps-Extractor.git
