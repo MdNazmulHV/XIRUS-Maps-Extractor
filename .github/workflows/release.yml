@@ -1,0 +1,22 @@
+name: Package Extension Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Extension Zip
+        run: |
+          zip -r xirus-maps-extractor.zip manifest.json background.js popup.* assets/ -x "assets/social-preview.png"
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: xirus-maps-extractor.zip
+          generate_release_notes: true
