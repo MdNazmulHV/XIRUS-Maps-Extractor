@@ -11,10 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Use Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Validate Manifest File
+      - name: Validate Manifest V3 Structure
         run: |
-          node -e 'const fs = require("fs"); const m = JSON.parse(fs.readFileSync("manifest.json")); console.log("Manifest V3 Version:", m.manifest_version);'
+          node -e 'const fs = require("fs"); const m = JSON.parse(fs.readFileSync("manifest.json")); if (m.manifest_version !== 3) throw new Error("Invalid manifest version"); console.log("Manifest V3 Verified: ", m.name, m.version);'
+      - name: Run Syntax Checks
+        run: |
+          node -c background.js
