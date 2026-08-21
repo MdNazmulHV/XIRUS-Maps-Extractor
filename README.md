@@ -26,7 +26,7 @@
 
 | Capability | Engineering Implementation | Operational Impact |
 | :--- | :--- | :--- |
-| **Zero-Loss Source Pulls** | Dynamic \`=s0-d\` regex bypass engine | Extracts native master resolution images instead of downscaled previews |
+| **Zero-Loss Source Pulls** | Dynamic `=s0-d` regex bypass engine | Extracts native master resolution images instead of downscaled previews |
 | **Waterfall Media Probing** | Non-blocking asynchronous network interceptors | Discovers upstream video streams at maximum encoded bitrates |
 | **Cyber-Glassmorphism HUD** | Isolated Shadow-DOM reactive overlay | Zero layout collisions with host page styles; fully draggable |
 | **Zero-Telemetry Isolation** | 100% Client-side sandbox execution | No third-party network egress; zero data collection guaranteed |
@@ -49,7 +49,7 @@
 
 ### Option A: Production Distribution (Fastest)
 
-1. Download the latest pre-compiled archive \`xirus-maps-extractor-v1.0.0.zip\` from **[Releases](https://github.com/MdNazmulHV/XIRUS-Maps-Extractor/releases)**.
+1. Download the latest pre-compiled archive `xirus-maps-extractor-v1.0.0.zip` from **[Releases](https://github.com/MdNazmulHV/XIRUS-Maps-Extractor/releases)**.
 2. Unpack the zip file into your local system directory.
 3. Open Google Chrome / Brave / Chromium and navigate to:
 ```text
@@ -70,7 +70,7 @@ git clone https://github.com/MdNazmulHV/XIRUS-Maps-Extractor.git
 cd XIRUS-Maps-Extractor
 ```
 
-Load the repository folder directly via \`chrome://extensions/\` with Developer Mode enabled.
+Load the repository folder directly via `chrome://extensions/` with Developer Mode enabled.
 
 ---
 
